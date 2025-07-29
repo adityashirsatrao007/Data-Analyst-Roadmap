@@ -3,7 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>30-Day Data Analyst Roadmap</title>
+    <title>30-Day Data Analyst Roadmap | Your Journey to Data Analytics</title>
+    <meta name="description" content="A comprehensive 30-day roadmap to becoming a Data Analyst. Learn Excel, Python, SQL, data visualization, and more with interactive progress tracking." />
+    <meta name="keywords" content="data analyst, roadmap, excel, python, sql, data visualization, learning path, analytics" />
+    <meta name="author" content="Aditya Shirsat Rao" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://adityashirsatrao007.github.io/Data-Analyst-Roadmap/" />
+    <meta property="og:title" content="30-Day Data Analyst Roadmap" />
+    <meta property="og:description" content="A comprehensive 30-day roadmap to becoming a Data Analyst with interactive progress tracking." />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://adityashirsatrao007.github.io/Data-Analyst-Roadmap/" />
+    <meta property="twitter:title" content="30-Day Data Analyst Roadmap" />
+    <meta property="twitter:description" content="A comprehensive 30-day roadmap to becoming a Data Analyst with interactive progress tracking." />
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts - Inter -->
@@ -2751,5 +2767,27 @@
         <p>&copy; 2025 Data Analyst Roadmap. All rights reserved.</p>
       </footer>
     </div>
+
+    <script>
+      // Save and load checkbox states from localStorage
+      document.addEventListener('DOMContentLoaded', function() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        
+        // Load saved states
+        checkboxes.forEach((checkbox, index) => {
+          const savedState = localStorage.getItem(`checkbox_${index}`);
+          if (savedState === 'true') {
+            checkbox.checked = true;
+          }
+        });
+        
+        // Save state when checkbox changes
+        checkboxes.forEach((checkbox, index) => {
+          checkbox.addEventListener('change', function() {
+            localStorage.setItem(`checkbox_${index}`, this.checked);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
