@@ -1,0 +1,2755 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30-Day Data Analyst Roadmap</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      /* Custom checkbox styling to match aesthetic */
+      input[type="checkbox"] {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        width: 1.25rem;
+        height: 1.25rem;
+        border: 2px solid #f472b6; /* Pink-400 */
+        border-radius: 0.375rem; /* rounded-md */
+        background-color: #fce4ec; /* Pink-50 */
+        cursor: pointer;
+        position: relative;
+        outline: none;
+        transition: all 0.2s ease-in-out;
+      }
+      input[type="checkbox"]:checked {
+        background-color: #db2777; /* Pink-600 */
+        border-color: #db2777;
+      }
+      input[type="checkbox"]:checked::after {
+        content: "\2713"; /* Checkmark symbol */
+        font-size: 0.8rem;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      input[type="checkbox"]:focus {
+        box-shadow: 0 0 0 3px rgba(251, 113, 133, 0.4); /* Pink-300 with transparency */
+      }
+      /* Style for Notion-like lists */
+      .notion-list li {
+        list-style: none; /* Remove default bullet */
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: flex-start;
+      }
+      .notion-list li input[type="checkbox"] {
+        margin-right: 0.75rem; /* Space between checkbox and text */
+        flex-shrink: 0; /* Prevent checkbox from shrinking */
+        margin-top: 0.2rem; /* Align checkbox vertically with text */
+      }
+    </style>
+  </head>
+  <body class="bg-pink-50 min-h-screen text-gray-800">
+    <div class="container mx-auto px-4 py-8">
+      <!-- Header Section -->
+      <header class="text-center mb-12">
+        <h1
+          class="text-5xl md:text-6xl font-extrabold text-pink-700 mb-4 tracking-tight"
+        >
+          🌸 30-Day Data Analyst Roadmap 🌸
+        </h1>
+        <p class="text-xl md:text-2xl text-pink-500 font-medium">
+          Your beautiful journey to becoming a Data Analyst, day by day!
+        </p>
+        <p class="text-lg text-gray-600 mt-2 max-w-2xl mx-auto">
+          Track your progress with interactive checkboxes and immerse yourself
+          in the learning process.
+        </p>
+      </header>
+
+      <!-- Overall Goal -->
+      <div
+        class="bg-gradient-to-r from-pink-100 to-rose-100 p-8 rounded-3xl shadow-xl mb-12 border border-pink-200"
+      >
+        <h2 class="text-3xl font-bold text-pink-700 mb-4">✨ Overall Goal:</h2>
+        <p class="text-xl text-gray-700 leading-relaxed">
+          Become a foundational Data Analyst in 30 days, capable of
+          understanding data, performing basic analysis, and visualizing
+          insights.
+        </p>
+      </div>
+
+      <!-- Week 1 Section -->
+      <section class="mb-12">
+        <h2 class="text-4xl font-bold text-pink-600 mb-8 text-center">
+          💖 Week 1: Foundations & Excel Mastery
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Day 1 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 1: Introduction to Data Analytics
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Understand the core concepts of data analytics.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the general definition
+                  of "Data Analytics."</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Differentiate between Descriptive,
+                  Diagnostic, Predictive, and Prescriptive Analytics.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Identify "Key Concepts for Data"
+                  such as data collection, cleanup, and basic analysis.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Reflect on why a strong data
+                  foundation is crucial.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.ibm.com/topics/data-analytics"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >IBM: What is Data Analytics?</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=R0yDkR8qjuY"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Tableau: What is Data Analysis? (Video)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.investopedia.com/terms/t/types-of-data-analytics.asp"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Investopedia: 4 Types of Data Analytics</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Write down 2-3 real-world examples
+                  for each type of data analytics.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Summarize in your own words the
+                  importance of "data collection" and "data cleanup."</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/FCE4EC/DB2777?text=Your+Intro+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 2 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 2: Excel Basics - Functions (Part 1)
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Learn essential Excel functions for basic data manipulation.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice `SUM()`
+                  function.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice `MIN()` and
+                  `MAX()` functions.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice `AVERAGE()`
+                  function.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice `COUNT()`
+                  function.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice `CONCAT()` (or
+                  `CONCATENATE()`) for combining text.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice `TRIM()` for
+                  removing extra spaces.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice `UPPER()`,
+                  `LOWER()`, and `PROPER()` for text casing.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.excel-easy.com/functions.html"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Excel Easy: Excel Formulas and Functions</a
+                >
+              </li>
+              <li>Youtube: "Excel SUM AVERAGE COUNT functions tutorial"</li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Download a simple dataset (e.g.,
+                  "Sample Superstore" from Tableau Public).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Apply `SUM`, `AVERAGE`, `COUNT` to
+                  numerical columns.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Apply `MIN` and `MAX` to find
+                  smallest/largest values.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use `CONCAT` to combine first and
+                  last names.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use `TRIM` on a column with known
+                  extra spaces.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Experiment with `UPPER`, `LOWER`,
+                  `PROPER` on text data.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 3 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 3: Excel Basics - Functions (Part 2) & Lookups
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Master more advanced Excel functions, especially for data
+              lookup.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice `REPLACE()` and
+                  `SUBSTITUTE()` for text replacement.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the purpose and syntax
+                  of `VLOOKUP()`.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice `VLOOKUP()` for exact
+                  matches.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the purpose and syntax
+                  of `HLOOKUP()` (less common, but good to know).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice the `IF()`
+                  function for conditional logic.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice `DATEDIF()` for
+                  calculating date differences.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.excel-easy.com/functions/vlookup.html"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Excel Easy: Excel VLOOKUP Function</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.excel-easy.com/functions/if-function.html"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Excel Easy: Excel IF Function</a
+                >
+              </li>
+              <li>
+                Youtube: "Excel VLOOKUP tutorial" or "Excel IF function
+                explained"
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Create two small, related tables in
+                  Excel and use `VLOOKUP`.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use the `IF` function to categorize
+                  data.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Calculate age or duration between
+                  two dates using `DATEDIF`.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/F8BBd0/880E4F?text=Your+Excel+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 4 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 4: Excel - Charting & Pivot Tables
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Visualize data and summarize large datasets using Excel.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand different chart types
+                  and when to use them.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create various basic charts in
+                  Excel using your sample data.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the concept and purpose
+                  of Pivot Tables.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a basic Pivot Table to
+                  summarize data by one category.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Add a second field to rows/columns
+                  in your Pivot Table.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice changing calculation types
+                  in Pivot Tables.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data-a9a84538-bfe9-40a9-a8e9-f99134456576"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Microsoft Support: Create a PivotTable</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=FjI51i0d3QY"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Leila Gharani: The Ultimate Excel Charting Tutorial</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Using your sample dataset, create a
+                  bar chart for sales by product category.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a line chart for sales over
+                  time.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a Pivot Table to show the
+                  average sales per customer segment.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 5 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 5: SQL - Introduction & Basic Queries
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Understand the basics of SQL for database interaction.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand "What is SQL?" and its
+                  role in data analysis.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn the basic structure of a
+                  `SELECT` statement.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice selecting specific columns
+                  and all columns (`*`) using `SELECT` and `FROM`.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use the `WHERE` clause to filter
+                  data based on conditions (e.g., `=`, `>`, `<`, `LIKE`).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use `AND`, `OR`, `NOT` operators in
+                  `WHERE` clauses.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use `ORDER BY` to sort results in
+                  ascending or descending order.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.w3schools.com/sql/sql_select.asp"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >W3Schools: SQL SELECT Statement</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://sqlzoo.net/wiki/SQL_Tutorial"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >SQLZoo: SQL Tutorial (Beginner sections)</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Use an online SQL sandbox (e.g.,
+                  DB-Fiddle, SQL Fiddle) to practice selecting all data.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Write a query to select products
+                  with a price greater than $50.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Write a query to select customers
+                  from a specific city, sorted by name.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/FFC1E3/AD1457?text=Your+SQL+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 6 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 6: SQL - Aggregation & Joins
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Learn to summarize data and combine information from
+              multiple tables in SQL.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice SQL aggregate
+                  functions: `COUNT()`, `SUM()`, `AVG()`, `MIN()`,
+                  `MAX()`.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand and practice the `GROUP
+                  BY` clause for aggregating data by categories.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use the `HAVING` clause to filter
+                  results of aggregate functions.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the concept of database
+                  joins.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice `INNER JOIN` to combine
+                  matching rows from two tables.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice `LEFT JOIN` to include all
+                  rows from the left table.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.w3schools.com/sql/sql_groupby.asp"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >W3Schools: SQL Group By</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.w3schools.com/sql/sql_join.asp"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >W3Schools: SQL Joins</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Write a query to count the number
+                  of orders for each customer.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Write a query to find the total
+                  sales for each product category.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create two simple tables (e.g.,
+                  `Customers` and `Orders`) in your sandbox and practice `INNER
+                  JOIN` and `LEFT JOIN`.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 7 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 7: Weekly Review & Project Idea
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Consolidate knowledge from Week 1 and brainstorm a
+              mini-project.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Review all Excel functions and SQL
+                  commands learned this week.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Revisit any concepts or practices
+                  that felt challenging.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Brainstorm 2-3 simple data analysis
+                  project ideas.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Select one mini-project idea for
+                  the coming weeks.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>Your notes from the week.</li>
+              <li>Revisit any links from Days 1-6 as needed.</li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Outline the steps you would take to
+                  analyze your chosen mini-project.</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Week 2 Section -->
+      <section class="mb-12">
+        <h2 class="text-4xl font-bold text-pink-600 mb-8 text-center">
+          💜 Week 2: Python for Data & Data Cleaning
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Day 8 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 8: Python - Basics for Data
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Get started with Python programming, focusing on
+              data-relevant concepts.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Install Python (Anaconda
+                  distribution recommended).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Set up an IDE like VS Code or use
+                  Jupyter Notebooks.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn Python basics: variables,
+                  data types.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand and practice Python
+                  lists.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand and practice Python
+                  dictionaries.</label
+                >
+              </li>
+              <li>
+                <label><input type="checkbox" /> Learn basic operators.</label>
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand and practice `if/else`
+                  statements.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand and practice `for`
+                  loops.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.w3schools.com/python/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >W3Schools: Python Tutorial</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/playlist?list=PL_c9HzjE318lX5N3F-gO-l68jJp2g1gVj"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >freeCodeCamp: Python for Everybody (Video Course)</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Write simple Python scripts to
+                  create and manipulate lists.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a dictionary representing an
+                  item's properties.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Write a loop that prints numbers
+                  from 1 to 10.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Write a function that checks if a
+                  number is even or odd.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/F4D7F0/9C27B0?text=Your+Python+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 9 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 9: Python - Introduction to Pandas
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Understand the core data manipulation library in Python.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand what Pandas is and why
+                  it's used.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn about Pandas Series
+                  (1-dimensional data).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn about Pandas DataFrames
+                  (2-dimensional tabular data).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice creating Series and
+                  DataFrames manually.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn how to import data from a CSV
+                  file (`pd.read_csv()`).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice selecting specific columns
+                  from a DataFrame.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice filtering rows based on
+                  single and multiple conditions.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://pandas.pydata.org/docs/user_guide/10min.html"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Pandas Official: 10 minutes to pandas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.datacamp.com/courses/introduction-to-pandas"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >DataCamp: Introduction to Pandas (Free intro)</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a Pandas Series from a list
+                  of numbers.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a DataFrame from a
+                  dictionary of lists.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Import a sample sales data CSV into
+                  a Pandas DataFrame.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Select the 'Product' and 'Sales'
+                  columns.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Filter the DataFrame to show only
+                  rows where 'Sales' are greater than 100.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 10 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 10: Pandas - Data Manipulation
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Perform essential data manipulation tasks using Pandas.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice using
+                  `groupby()` for aggregation (`sum()`, `mean()`,
+                  `count()`).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice `sort_values()` to sort a
+                  DataFrame.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice `value_counts()`
+                  for unique value counts.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the concept of `apply()`
+                  and `lambda` functions.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use `apply()` with a `lambda`
+                  function to create a new column.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://mode.com/blog/pandas-groupby-explained/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Mode Analytics: Pandas GroupBy Explained</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/python-pandas-dataframe-apply/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >GeeksforGeeks: Pandas Apply Function</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Group your sales DataFrame by
+                  'Product Category' and calculate total sales.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Sort your DataFrame by 'Sales' in
+                  descending order.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Find the frequency of each unique
+                  value in a 'Customer Segment' column.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a new column 'Profit_Margin'
+                  using a lambda function.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/F0F4D7/7B228B?text=Your+Pandas+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 11 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 11: Data Collection - CSV & Basic Web Scraping
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Understand how to collect data from different sources.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice loading various CSV files
+                  into Pandas DataFrames.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the basics of HTTP
+                  requests using `requests` library.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn how to parse HTML content
+                  using `BeautifulSoup`.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Attempt to scrape a simple,
+                  publicly available table from a non-protected website.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand ethical considerations
+                  and legal aspects of web scraping.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://realpython.com/pandas-read-write-csv/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Real Python: Reading and Writing CSV files</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.datacamp.com/tutorial/web-scraping-python-tutorial"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >DataCamp: Web Scraping with Python (Intro)</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Find another public CSV dataset
+                  online (e.g., from data.gov).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Identify a simple HTML table on
+                  Wikipedia and write a script to scrape it.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 12 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 12: Data Cleaning - Missing Data & Duplicates
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Learn techniques for cleaning messy data.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Identify missing values using
+                  `df.isna()` or `df.isnull()`.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice dropping
+                  rows/columns with missing values (`df.dropna()`).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn and practice filling missing
+                  values (`df.fillna()`).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Identify duplicate rows using
+                  `df.duplicated()`.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice dropping duplicate rows
+                  (`df.drop_duplicates()`).</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.geeksforgeeks.org/handling-missing-values-in-pandas-dataframe/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >GeeksforGeeks: Handling Missing Values</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.shanelynn.ie/how-to-drop-duplicate-rows-in-pandas-dataframe/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Shane Lynn: How to Drop Duplicate Rows</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Find a dataset with known missing
+                  values or duplicates.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Apply missing value handling
+                  techniques (drop and fill).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Identify and remove duplicates from
+                  the dataset.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 13 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 13: Data Cleaning - Outliers & Transformation
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Address outliers and perform data transformations.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand what outliers are and
+                  why they need to be handled.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn simple methods for
+                  identifying outliers (e.g., using descriptive statistics, box
+                  plots).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand basic strategies for
+                  dealing with outliers (conceptual).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice changing data types of
+                  columns using `df.astype()`.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the concept of feature
+                  scaling (conceptual).</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://towardsdatascience.com/a-guide-to-outlier-detection-in-python-656860d5ee07"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Towards Data Science: Outlier Detection in Python</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.astype.html"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Pandas Official Docs: `.astype()`</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Use the `describe()` method to look
+                  for outliers.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Practice converting a numerical
+                  column stored as a string to a numeric type.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/F0D7F4/9C27B0?text=Your+Cleaning+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 14 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 14: Weekly Review & Project Integration
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Review Python and data cleaning skills, integrate into your
+              project.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Review all Python basics, Pandas
+                  operations, and data cleaning techniques.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Address any remaining areas of
+                  confusion or difficulty.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Finalize the dataset for your
+                  mini-project.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Apply the data cleaning and
+                  manipulation techniques learned in Python/Pandas to your
+                  project dataset.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>Your notes and previous practice code.</li>
+              <li>Revisit any links from Days 8-13 as needed.</li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Clean your chosen project dataset
+                  thoroughly using Pandas.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Perform some initial data
+                  manipulations on your project data.</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Week 3 Section -->
+      <section class="mb-12">
+        <h2 class="text-4xl font-bold text-pink-600 mb-8 text-center">
+          🧡 Week 3: Data Visualization & Statistical Analysis
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Day 15 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 15: Data Visualization - Matplotlib
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Create static plots using Matplotlib.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the basics of Matplotlib
+                  and its role.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a basic Line Chart to show
+                  trends.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a Bar Chart to compare
+                  categories.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a Histogram to visualize
+                  data distribution.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a Scatter Plot to explore
+                  relationships.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Add titles, labels, and legends to
+                  your plots.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://matplotlib.org/stable/tutorials/index.html"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Matplotlib Official Docs: Tutorials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=FjI51i0d3QY"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >freeCodeCamp: Matplotlib Full Course (Video)</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Use Matplotlib to visualize
+                  distributions and relationships in your project
+                  dataset.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Plot sales trends over time, or
+                  distribution of customer ages.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/FCE0B2/BF360C?text=Your+Matplotlib+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 16 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 16: Data Visualization - Seaborn
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Create aesthetically pleasing and informative statistical
+              plots with Seaborn.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand how Seaborn builds on
+                  Matplotlib.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create Box Plots to show
+                  distribution and outliers.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create Violin Plots for detailed
+                  distribution visualization.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create Heatmaps, especially for
+                  visualizing correlation matrices.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use Seaborn for visualizing
+                  distributions (`histplot`, `kdeplot`).</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://seaborn.pydata.org/tutorial.html"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Seaborn Official Docs: Tutorial</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=Kz6XfW3X8q4"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >freeCodeCamp: Seaborn Course (Video)</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Recreate some plots from Day 15
+                  using Seaborn.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use Seaborn to create a heatmap of
+                  correlations between numerical columns.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 17 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 17: Introduction to Tableau / PowerBI
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Get a basic understanding of a popular Business Intelligence
+              (BI) tool.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Choose either Tableau Public (free)
+                  or PowerBI Desktop (free).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Download and install your chosen
+                  tool.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Connect to a simple data source
+                  (e.g., your cleaned project CSV).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the user
+                  interface.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create basic charts using the
+                  drag-and-drop interface.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a simple dashboard combining
+                  2-3 visualizations.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://public.tableau.com/en-us/s/resources"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Tableau Public Resources</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://learn.microsoft.com/en-us/power-bi/guided-learning/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Microsoft Learn: Power BI Guided Learning</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Connect your project dataset to
+                  Tableau Public/PowerBI.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Recreate 2-3 key visualizations
+                  from your Python project in the BI tool.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/FFD6CC/CC3300?text=Your+BI+Tool+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 18 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 18: Generating Statistics - Central Tendency & Dispersion
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Understand and calculate basic descriptive statistics.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Define and calculate Mean, Median,
+                  and Mode for a dataset.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand when to use each measure
+                  of central tendency.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Define and calculate Range,
+                  Variance, and Standard Deviation.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand what measures of
+                  dispersion tell you about data spread.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Use Pandas methods (`.mean()`,
+                  `.median()`, etc.) to calculate these statistics.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/measures-of-central-tendency/v/mean-median-and-mode"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Khan Academy: Measures of Central Tendency</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.khanacademy.org/math/statistics-probability/summarizing-quantitative-data/measures-of-spread/v/range-variance-and-standard-deviation-as-measures-of-dispersion"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Khan Academy: Measures of Spread</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> For 2-3 numerical columns,
+                  calculate all central tendency and dispersion measures.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Interpret what these numbers tell
+                  you about your data.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 19 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 19: Generating Statistics - Distribution Shape & Descriptive
+              Analysis
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Understand the shape of data distributions and perform
+              descriptive analysis.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand Skewness and
+                  Kurtosis.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Calculate skewness and kurtosis
+                  using Pandas (`.skew()`, `.kurt()`).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Perform a comprehensive descriptive
+                  analysis, combining statistics with visualizations.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Write a brief summary of the key
+                  characteristics of your dataset.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=F_f0h9u-89Q"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >StatQuest: Skewness (Video)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=hG3zL19_79M"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >StatQuest: Kurtosis (Video)</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Create histograms and box plots to
+                  visually inspect distribution shapes.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Write a short paragraph describing
+                  the distribution of key numerical variables.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/FFECB3/B74000?text=Your+Stats+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 20 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 20: Statistical Analysis - Hypothesis Testing & Correlation
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Introduce yourself to inferential statistics.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the basic idea of
+                  Hypothesis Testing (null vs. alternative hypothesis, p-value
+                  conceptual).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the concept of
+                  Correlation and the correlation coefficient.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the difference between
+                  correlation and causation.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Calculate a correlation matrix
+                  using Pandas (`.corr()`).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Interpret the correlation
+                  coefficients.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=5koM01u3o3Y"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >StatQuest: P-values, clearly explained (Video)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=xZ_z8BON8z4"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >StatQuest: Correlation (Video)</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Formulate a simple hypothesis for
+                  your project data.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Generate and interpret the
+                  correlation matrix for your numerical columns.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 21 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 21: Weekly Review & Project Visualization
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Consolidate visualization and statistical skills, apply to
+              your project.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Review all visualization types and
+                  statistical concepts learned this week.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Ensure your project data is clean
+                  and ready for comprehensive visualization.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create 5-7 key visualizations for
+                  your project.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Add appropriate titles, axis
+                  labels, and legends to all your visualizations.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Write a brief caption/description
+                  for each visualization.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>Your project data and existing code.</li>
+              <li>Revisit any links from Days 15-20 as needed.</li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Integrate your best visualizations
+                  into a cohesive narrative for your project.</label
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Week 4 Section -->
+      <section class="mb-12">
+        <h2 class="text-4xl font-bold text-pink-600 mb-8 text-center">
+          💖 Week 4: Advanced Topics & Project Completion
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Day 22 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 22: Introduction to Regression
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Understand the basics of regression analysis.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand what Regression Analysis
+                  is used for.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn the basic concept of Linear
+                  Regression (conceptual).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand independent and
+                  dependent variables.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Identify potential use cases for
+                  regression.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.youtube.com/watch?v=szA_0G2F94g"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >StatQuest: Linear Regression (Video)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.ibm.com/topics/regression-analysis"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >IBM: What is Regression Analysis?</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Think about what variables in your
+                  project data you might want to predict.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/FCE0F0/BF0F6F?text=Your+Regression+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 23 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 23: Machine Learning Basics & Types
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Get a conceptual overview of Machine Learning.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the general definition
+                  of Machine Learning.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Differentiate between Supervised,
+                  Unsupervised, and Reinforcement Learning (conceptual).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the general workflow of
+                  an ML project.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.youtube.com/playlist?list=PL_c9HzjE318lX5N3F-gO-l68jJp2g1gVj"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Google AI: What is Machine Learning? (Video Series)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.ibm.com/topics/machine-learning-types"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >IBM: Types of Machine Learning</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> For each type of ML, identify 1-2
+                  real-world applications.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 24 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 24: Popular ML Algorithms (Conceptual)
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Briefly understand common ML algorithms.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the basic idea behind
+                  Decision Trees.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the basic idea behind
+                  Naive Bayes.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the basic idea behind
+                  K-Nearest Neighbors (KNN).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the basic idea behind
+                  K-Means Clustering.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the basic idea behind
+                  Logistic Regression.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                Youtube: "StatQuest [Algorithm Name] explained" (e.g.,
+                "StatQuest: K-means clustering," "StatQuest: Logistic
+                Regression," "StatQuest: Decision Trees")
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> For each algorithm, briefly note
+                  down its primary use case.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/FCE9F8/B81F93?text=Your+ML+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 25 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 25: Big Data Concepts (Optional)
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Acknowledge the landscape of Big Data (optional, depending
+              on time).
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the "3 Vs" of Big Data
+                  (Volume, Velocity, Variety).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Briefly learn about Hadoop
+                  (distributed storage and processing).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Briefly learn about Spark (faster
+                  processing, in-memory computation).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand why traditional tools
+                  might not suffice for Big Data.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.ibm.com/topics/big-data"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >IBM: What is Big Data?</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.investopedia.com/articles/investing/102915/hadoop-vs-spark-whats-difference.asp"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Investopedia: Hadoop vs. Spark</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> No hands-on practice expected, just
+                  conceptual understanding.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 26 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 26: Project Finalization & Documentation
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Complete your project and prepare it for sharing.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Review your entire project from
+                  data collection to visualization.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Ensure all code is well-commented
+                  and easy to understand.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Create a simple report or
+                  presentation.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Include a clear Problem Statement
+                  for your project.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Detail your Data Sources and
+                  Cleaning Steps.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Present your Key Findings from the
+                  analysis.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Include your best Visualizations
+                  with brief explanations.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Write clear Conclusions/Insights
+                  based on your data.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://towardsdatascience.com/how-to-document-your-data-science-projects-f24300e84b2c"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Towards Data Science: How to Document Your Data Science
+                  Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >GitHub</a
+                >
+                (for hosting code)
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Ensure your project tells a clear
+                  story and your insights are well-supported.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/FFECF6/A00078?text=Your+Project+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 27 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 27: Building a Portfolio & Kaggle
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Understand how to showcase your skills and learn from
+              others.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the importance of
+                  building a portfolio for job applications.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Review common example
+                  projects.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Register on
+                  <a
+                    href="https://www.kaggle.com/"
+                    target="_blank"
+                    class="text-blue-500 hover:underline"
+                    >Kaggle</a
+                  >.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Browse ongoing Kaggle Competitions
+                  and public Notebooks/Kernels.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand how Kaggle allows you to
+                  learn from the community.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.datacamp.com/blog/how-to-build-a-data-science-portfolio-that-gets-u-hired"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >DataCamp: How to Build a Data Science Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.kaggle.com/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Kaggle</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> If you have a GitHub account,
+                  upload your completed project.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Explore one or two interesting
+                  Kaggle datasets or competitions.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 28 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 28: Online Courses & Certifications
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Identify resources for continuous learning and skill
+              validation.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Research popular online courses and
+                  certifications.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Explore platforms like Coursera,
+                  edX, Udemy, and DataCamp.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Look for "Data Analyst Career
+                  Tracks" or "Specializations."</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Read reviews for potential
+                  courses.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.coursera.org/browse/data-science/data-analysis"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Coursera: Data Analysis</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.edx.org/learn/data-analytics"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >edX: Data Analytics</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.udemy.com/courses/data-science/data-analysis/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Udemy: Data Analysis</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.datacamp.com/tracks/data-analyst-in-python"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >DataCamp: Data Analyst in Python</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Select one or two
+                  courses/certifications for future learning. Bookmark
+                  them.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/E8F5E9/2E7D32?text=Your+Learning+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+
+          <!-- Day 29 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 29: Stay Updated & Networking (Part 1)
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Learn how to stay current in the field and connect with
+              professionals.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand the importance of
+                  continuous learning.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Identify relevant blogs, forums,
+                  and industry publications.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Explore introductory resources on
+                  advanced topics (e.g., AI ethics, cloud computing).</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Set up or optimize your LinkedIn
+                  profile for data analytics.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://towardsdatascience.com/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Towards Data Science (on Medium)</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/business/learning/blog/data-science-and-analytics"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >LinkedIn Learning Blog</a
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Read one recent article on a new
+                  data analytics tool or trend.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Identify 3-5 data analysts or data
+                  scientists on LinkedIn to follow.</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Day 30 Card -->
+          <div
+            class="bg-white p-6 rounded-2xl shadow-lg border border-pink-100 hover:shadow-xl transition-shadow duration-300"
+          >
+            <h3 class="text-2xl font-semibold text-pink-700 mb-3">
+              Day 30: Networking (Part 2) & Future Steps
+            </h3>
+            <p class="text-pink-500 mb-4 font-medium">
+              Goal: Expand your network and plan your next steps.
+            </p>
+            <ul class="notion-list text-gray-700 text-base">
+              <li>
+                <label
+                  ><input type="checkbox" /> Understand how to connect with
+                  professionals on LinkedIn effectively.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Search for online networking
+                  events, webinars, or virtual meetups.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Learn about seeking mentorship in
+                  the field.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Review the broader "AI and Data
+                  Scientist Roadmap" for long-term career paths.</label
+                >
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-6 mb-2">
+              📚 Study Materials:
+            </h4>
+            <ul class="text-sm text-gray-600 space-y-1">
+              <li>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://roadmap.sh/data-analyst"
+                  target="_blank"
+                  class="text-blue-500 hover:underline"
+                  >Data Analyst Roadmap</a
+                >
+                (Revisit for AI and Data Scientist tracks)
+              </li>
+            </ul>
+            <h4 class="text-lg font-semibold text-pink-600 mt-4 mb-2">
+              ✏️ Practice:
+            </h4>
+            <ul class="notion-list text-gray-700 text-sm">
+              <li>
+                <label
+                  ><input type="checkbox" /> Send a personalized connection
+                  request to 2-3 professionals on LinkedIn.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Identify one upcoming webinar or
+                  online event to attend.</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" /> Reflect on your 30-day journey and
+                  outline 3 specific skills you want to deepen.</label
+                >
+              </li>
+            </ul>
+            <!-- Space for your image -->
+            <img
+              src="https://placehold.co/400x200/F5F5DC/8D6E63?text=Your+Future+Image"
+              alt="Placeholder Image"
+              class="w-full h-auto rounded-lg mt-6 shadow-md"
+            />
+          </div>
+        </div>
+      </section>
+
+      <footer class="text-center mt-16 text-gray-500 text-sm">
+        <p>&copy; 2025 Data Analyst Roadmap. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
